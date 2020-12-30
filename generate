@@ -6,7 +6,7 @@ from PIL import ImageDraw
 import random, sys
 
 def pickWord(wordType):
-	if (wordType == "Person"):
+	if (wordType == "Person/Profession"):
 		randomIndex = random.randint(0, len(personWords) - 1)
 		pickedWord = personWords[randomIndex]
 		personWords.remove(pickedWord)
@@ -68,8 +68,9 @@ titleFont = ImageFont.truetype("resources/HansKendrick-Regular.ttf", 38)
 wordFont = ImageFont.truetype("resources/HansKendrick-Regular.ttf", 62)
 
 # Prepare entry colors and titles
-entryBackgroundColors = ((255, 255, 0), (186, 224, 255), (255, 198, 117), (125, 255, 140), (255, 132, 131))
-entryTitles = ("Person", "Object", "Action/Verb", "Difficult", "All play")
+#entryBackgroundColors = ((255, 255, 0), (186, 224, 255), (255, 198, 117), (125, 255, 140), (255, 132, 131))
+entryBackgroundColors = ((245, 245, 0), (220, 240, 245), (245, 227, 177), (183, 245, 183), (245, 188, 187))
+entryTitles = ("Person/Profession", "Object", "Action/Verb", "Difficult", "All play")
 
 # Prepare the sheet
 paperSheet = Image.new("RGBA", (paperWidth, paperHeight), (255, 255, 255))

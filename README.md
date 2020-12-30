@@ -10,6 +10,8 @@ Requires Pythong 3.x, [Pillow](http://pillow.readthedocs.org/en/latest/installat
 
 To use the default word list, navigate to your cloned repo directory and then place the Hans Kendrick font into `resources`. Then, just run `./generate` in the terminal. You may need to `chmod +x generate` to give the file permissions to execute. If you'd like to modify the words that appear on the cards, look in /word-lists/ and modify the text files.
 
+By default uses `medium.txt` for "All play" and `hard.txt` for "Difficult" (`easy.txt` unused).
+
 ## Extras
 There's also a PSD of a board in `resources` that you can print to play the game. It fits on an A3 piece of paper.
 
